@@ -215,7 +215,7 @@
 
   <!-- Optional JavaScript -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script id="popup-js">
+  <script>
     $(".form").on('click', function () {
       $(this).addClass('active');
     });
@@ -231,6 +231,7 @@
     });
     //# sourceURL=pen.js
   </script>
+  <!-- 原本為延遲submit等動畫效果播完才收回傳，已用iframe解決
   <script>
     var my_form = document.getElementById("my_form"),
       my_button = document.getElementById("my_button");
@@ -243,8 +244,8 @@
         my_form.submit();
       }, 2500);
       return false;
-    }
   </script>
+      }-->
   <script>
     var quail = document.getElementById("quailgroup");
     var chick = document.getElementById("chickgroup");

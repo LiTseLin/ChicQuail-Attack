@@ -17,23 +17,23 @@
         "wingid": {
             presence: {
                 message: "是必填的欄位"
-            }, // 密碼是必填欄位
+            }, 
             length: {
-                minimum: 5, // 長度大於 ５
-                maximum: 5, // 長度小於 12
+                minimum: 5, 
+                maximum: 5, 
                 message: "翼號為五位數"
             },
             format: {
-                pattern: "[0-9]+", // 只能填入數字
+                pattern: "[0-9]+", 
                 message: "只能填入數字"
             }
         },
         "weight": {
             presence: {
                 message: "是必填的欄位"
-            }, // 必填使用者名稱
+            }, 
             length: {
-                minimum: 4, // 名稱長度要超過 3 
+                minimum: 4, 
             },
             numericality: {
                 onlyInteger: false  // 只能是整數
