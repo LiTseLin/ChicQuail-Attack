@@ -1,0 +1,76 @@
+body{ 
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體",'Lato', sans-serif;
+}
+
+h2,h3 {
+    text-align:center;
+}
+.key{
+    display: inline;
+    color:white;
+    -webkit-transition: all 0.5s 1s ease;
+    transition: all 0.5s 1s ease;
+}
+.group1{
+    display: inline;
+    color:white;
+    -webkit-transition: all 0.5s 1s ease;
+    transition: all 0.5s 1s ease;
+}
+.group2{
+    top: 0;
+    display: inline;
+    border: none;
+    width: 80px;
+    padding: 5px 10px 5px 10px;
+    background: #fefefe;
+    margin: 12px 0 0 0;
+    font-style: italic;
+    border: 2px solid #bbb;
+    -webkit-transition: all 0.5s 1s ease;
+    transition: all 0.5s 1s ease;
+}
+.text1{
+    top: 0;
+    display: inline;
+    width: 75px;
+    border: none;
+    padding: 5px;
+    background: #fefefe;
+    margin: 2px 0 0 0;
+    font-style: italic;
+    border: 2px solid #bbb;
+    -webkit-transition: all 0.5s 1s ease;
+    transition: all 0.5s 1s ease;
+} 
+.text2{
+    top: 0;
+    display: inline;
+    width: 75px;
+    border: none;
+    padding: 5px;
+    background: #fefefe;
+    margin: 2px 0 0 0;
+    font-style: italic;
+    border: 2px solid #bbb;
+    -webkit-transition: all 0.5s 1s ease;
+    transition: all 0.5s 1s ease;
+}
+.table{
+    display: inline-block;
+    color:white;
+    -webkit-transition: all 0.5s 1s ease;
+    transition: all 0.5s 1s ease;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+input[disabled]{
+    background: gray;
+}
+fieldset{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
