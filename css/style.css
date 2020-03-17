@@ -1,20 +1,19 @@
 body{ 
     font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體",'Lato', sans-serif;
 }
-
-h2,h3 {
+td,tr{
+    margin: 0ex;
+}
+h3,h4{
+    margin-bottom: 16px;
     text-align:center;
 }
-.key{
-    display: inline;
-    color:white;
-    -webkit-transition: all 0.5s 1s ease;
-    transition: all 0.5s 1s ease;
+.header{
+    
 }
 .group1{
     display: inline;
     color:white;
-    -webkit-transition: all 0.5s 1s ease;
     transition: all 0.5s 1s ease;
 }
 .group2{
@@ -27,7 +26,10 @@ h2,h3 {
     margin: 12px 0 0 0;
     font-style: italic;
     border: 2px solid #bbb;
-    -webkit-transition: all 0.5s 1s ease;
+    transition: all 0.5s 1s ease;
+}
+.sex{
+    color:white;
     transition: all 0.5s 1s ease;
 }
 .text1{
@@ -37,10 +39,8 @@ h2,h3 {
     border: none;
     padding: 5px;
     background: #fefefe;
-    margin: 2px 0 0 0;
     font-style: italic;
     border: 2px solid #bbb;
-    -webkit-transition: all 0.5s 1s ease;
     transition: all 0.5s 1s ease;
 } 
 .text2{
@@ -50,20 +50,17 @@ h2,h3 {
     border: none;
     padding: 5px;
     background: #fefefe;
-    margin: 2px 0 0 0;
     font-style: italic;
     border: 2px solid #bbb;
-    -webkit-transition: all 0.5s 1s ease;
     transition: all 0.5s 1s ease;
 }
-.table{
+
+.tablet{
     display: inline-block;
-    color:white;
-    -webkit-transition: all 0.5s 1s ease;
     transition: all 0.5s 1s ease;
-    margin-top: 10px;
-    margin-right: 10px;
     text-align: center;
+    color: white;
+    overflow-x: auto;
 }
 input[disabled]{
     background: gray;
@@ -71,6 +68,6 @@ input[disabled]{
 fieldset{
     border: 0;
     padding: 0;
-    margin: 0;
+    margin: 10px 0 0 0;
     min-width: 0;
 }

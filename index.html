@@ -6,207 +6,208 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!--CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/popup.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!--JS-->
-  <script src="js/validate.min.js"></script>
   <title>ChicQuail Attack</title>
 </head>
 
 <body>
-  <div class="header" id="header">
-    <h1>–中興動科–家禽生產實習–數據登錄–</h1>
-    <h2>當前活動 : 18週秤重</h2>
-    <h3>Ver0.7.5 (2020/3/11 by 風向雞)</h3>
-  </div>
-  <div class="form">
-    <iframe name="hidden_iframe" style="display:none;"></iframe>
-    <form action="https://script.google.com/macros/s/AKfycbxo1J5aJewZ5TRsj9AX1xuoQlgWV71gDAJBpRl20oSdsO6txa38/exec" target="hidden_iframe" id="my_form">
-      <fieldset>
-        <input class="key" type="radio" id="chicken" name="breed" value="chicken" onclick="select_chick()">
-        <label class="group1" for="chicken">土雞</label>
-        <input list="chicknum" class="group2" name="group" id="chickgroup">
-        <datalist id="chicknum">
-          <option value="1"></option>
-          <option value="2"></option>
-          <option value="3"></option>
-          <option value="4"></option>
-          <option value="5"></option>
-          <option value="6"></option>
-          <option value="7"></option>
-          <option value="8"></option>
-          <option value="9"></option>
-          <option value="10"></option>
-          <option value="11"></option>
-          <option value="12"></option>
-          <option value="13"></option>
-          <option value="14"></option>
-          <option value="15"></option>
-          <option value="16"></option>
-          <option value="17"></option>
-          <option value="18"></option>
-          <option value="19"></option>
-          <option value="20"></option>
-        </datalist>
-        <p class="group1">組</p>
-        <input class="key" type="radio" id="quail" name="breed" value="quail" onclick="select_quail()">
-        <label class="group1" for="quail">鵪鶉</label>
-        <input list="quailnum" class="group2" name="group" id="quailgroup">
-        <datalist id="quailnum">
-          <option value="1"></option>
-          <option value="2"></option>
-          <option value="3"></option>
-          <option value="4"></option>
-          <option value="5"></option>
-          <option value="6"></option>
-        </datalist>
-        <p class="group1">組</p><br>
-      </fieldset>
-      <fieldset id="sex">
-        <div class="table">
-          <input class="sex" type="checkbox" name="sex1" value="male" id="male" onclick="select_male()">
-          <label class="sex" for="male">公</label>
-          <table>
-            <tr>
-              <td>翼號</td>
-              <td>體重</td>
-              <td>翼號</td>
-              <td>體重</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid1" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt1" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid2" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt2" placeholder="體重(克)"> g</td>
-            <tr>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid3" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt3" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid4" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt4" placeholder="體重(克)"> g</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid5" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt5" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid6" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt6" placeholder="體重(克)"> g</td>
-            <tr>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid7" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt7" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid8" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt8" placeholder="體重(克)"> g</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid9" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt9" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid10" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt10" placeholder="體重(克)"> g</td>
-            <tr>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid11" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt11" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid12" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt12" placeholder="體重(克)"> g</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid13" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt13" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid14" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt14" placeholder="體重(克)"> g</td>
-            <tr>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid15" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt15" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid16" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt16" placeholder="體重(克)"> g</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid17" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt17" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid18" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt18" placeholder="體重(克)"> g</td>
-            <tr>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid19" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt19" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwid20" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text1" type="text" name="mwgt20" placeholder="體重(克)"> g</td>
-            </tr>
-          </table>
-        </div>
-        <div class="table">
-          <input class="sex" type="checkbox" name="sex2" value="female" id="female" onclick="select_female()">
-          <label class="sex" for="female">母</label>
-          <table>
-            <tr>
-              <td>翼號</td>
-              <td>體重</td>
-              <td>翼號</td>
-              <td>體重</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid1" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt1" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid2" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt2" placeholder="體重(克)"> g</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid3" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt3" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid4" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt4" placeholder="體重(克)"> g</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid5" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt5" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid6" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt6" placeholder="體重(克)"> g</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid7" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt7" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid8" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt8" placeholder="體重(克)"> g</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid9" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt9" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid10" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt10" placeholder="體重(克)"> g</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid11" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt11" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid12" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt12" placeholder="體重(克)"> g</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid13" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt13" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid14" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt14" placeholder="體重(克)"> g</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid15" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt15" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid16" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt16" placeholder="體重(克)"> g</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid17" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt17" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid18" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt18" placeholder="體重(克)"> g</td>
-            </tr>
-            <tr>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid19" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt19" placeholder="體重(克)"> g</td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwid20" placeholder="翼號"></td>
-              <td><input disabled="disabled" class="text2" type="text" name="fwgt20" placeholder="體重(克)"> g</td>
-            </tr>
-          </table>
-        </div>
-      </fieldset>
-      <button id="my_button" class="submit" type="submit">上繳</button>
-    </form>
-
-  </div>
+    <div class="header" id="header">
+      <h1>–中興動科–家禽生產實習–數據登錄–</h1>
+      <h3 >當前活動 : 18週秤重</h3>
+      <h4>Ver0.7.5 (2020/3/11 by 風向雞)</h4>
+    </div>
+    <div class="form">
+      <iframe name="hidden_iframe" style="display:none;"></iframe>
+      <form action="https://script.google.com/macros/s/AKfycbxo1J5aJewZ5TRsj9AX1xuoQlgWV71gDAJBpRl20oSdsO6txa38/exec"
+        target="hidden_iframe" id="my_form">
+        <fieldset>
+          <input class="group1" type="radio" id="chicken" name="breed" value="chicken" onclick="select_chick()">
+          <label class="group1" for="chicken">土雞</label>
+          <input list="chicknum" class="group2" name="group" id="chickgroup">
+          <datalist id="chicknum">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+            <option value="11"></option>
+            <option value="12"></option>
+            <option value="13"></option>
+            <option value="14"></option>
+            <option value="15"></option>
+            <option value="16"></option>
+            <option value="17"></option>
+            <option value="18"></option>
+            <option value="19"></option>
+            <option value="20"></option>
+          </datalist>
+          <p class="group1">組</p>
+          <input class="group1" type="radio" id="quail" name="breed" value="quail" onclick="select_quail()">
+          <label class="group1" for="quail">鵪鶉</label>
+          <input list="quailnum" class="group2" name="group" id="quailgroup">
+          <datalist id="quailnum">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+          </datalist>
+          <p class="group1">組</p><br>
+        </fieldset>
+        <fieldset id="sex">
+          <div class="tablet">
+            <input class="sex" type="checkbox" name="sex1" value="male" id="male" onclick="select_male()">
+            <label class="sex" for="male">公</label>
+            <table class="table table-striped" >
+              <tr>
+                <th>翼號</th>
+                <th>體重</th>
+                <th>翼號</th>
+                <th>體重</th>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid1" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt1" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid2" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt2" placeholder="體重(克)"> g</td>
+              <tr>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid3" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt3" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid4" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt4" placeholder="體重(克)"> g</td>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid5" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt5" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid6" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt6" placeholder="體重(克)"> g</td>
+              <tr>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid7" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt7" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid8" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt8" placeholder="體重(克)"> g</td>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid9" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt9" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid10" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt10" placeholder="體重(克)"> g</td>
+              <tr>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid11" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt11" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid12" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt12" placeholder="體重(克)"> g</td>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid13" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt13" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid14" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt14" placeholder="體重(克)"> g</td>
+              <tr>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid15" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt15" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid16" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt16" placeholder="體重(克)"> g</td>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid17" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt17" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid18" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt18" placeholder="體重(克)"> g</td>
+              <tr>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid19" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt19" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwid20" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text1" type="text" name="mwgt20" placeholder="體重(克)"> g</td>
+              </tr>
+            </table>
+          </div>
+          <div class="tablet">
+            <input class="sex" type="checkbox" name="sex2" value="female" id="female" onclick="select_female()">
+            <label class="sex" for="female">母</label>
+            <table class="table table-striped table-responsive">
+              <tr>
+                <th>翼號</th>
+                <th>體重</th>
+                <th>翼號</th>
+                <th>體重</th>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid1" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt1" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid2" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt2" placeholder="體重(克)"> g</td>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid3" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt3" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid4" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt4" placeholder="體重(克)"> g</td>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid5" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt5" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid6" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt6" placeholder="體重(克)"> g</td>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid7" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt7" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid8" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt8" placeholder="體重(克)"> g</td>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid9" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt9" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid10" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt10" placeholder="體重(克)"> g</td>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid11" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt11" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid12" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt12" placeholder="體重(克)"> g</td>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid13" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt13" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid14" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt14" placeholder="體重(克)"> g</td>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid15" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt15" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid16" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt16" placeholder="體重(克)"> g</td>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid17" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt17" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid18" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt18" placeholder="體重(克)"> g</td>
+              </tr>
+              <tr>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid19" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt19" placeholder="體重(克)"> g</td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwid20" placeholder="翼號"></td>
+                <td><input disabled="disabled" class="text2" type="text" name="fwgt20" placeholder="體重(克)"> g</td>
+              </tr>
+            </table>
+          </div>
+        </fieldset>
+        <button id="my_button" class="submit" type="submit">上繳</button>
+      </form>
+    </div>
 
   <div class="done_message">
     <span>一週又平安的過去了，雞雞們感謝你的努力</span></div>
@@ -214,7 +215,11 @@
   <div class="footer"></div>
 
   <!-- Optional JavaScript -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script>
     $(".form").on('click', function () {
       $(this).addClass('active');
